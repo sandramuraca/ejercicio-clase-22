@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+.contenedor-general{
+   
+}
+/*parte superior*/
+.parte-superior{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+/*contenedor tiulo principal y secundario*/
+.contenedor-titulos{
+    display: flex;
+    flex-direction: column;
+    padding: 80px 0 0 80px;
+    width: 50%;
+}
+
+.titulo-principal{
+    color:  hsl(300, 43%, 22%);
+    font-size: 45px;
+    font-weight: 800;
+    width: 80% ;
+}
+
+.subtitulo{
+    color:  hsl(300, 43%, 22%);
+    font-size: 20px;
+    font-weight: 400;
+    padding-top: 20px;
+    width: 80%;
+}
+/*fin contenedor  titulos*/
+
+/* cards estrellas*/
+.contenedor-cards{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 80px 50px 0 0;
+}
+
+.card-star{
+    font-size: 15px;
+    font-weight: 400;
+    color: hsl(300, 43%, 22%);
+    background-color: hsl(300, 24%, 96%);
+    width: 80%;
+    height: 40px;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 12px;
+}
+
+.card2{
+    margin-left: 20px;
+}
+
+.card3{
+    margin-left: 40px;
+}
+/*fin cards estrellas*/
+
+/*fin parte superior*/
+
+/*parte inferior*/
+.parte-inferior{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 50px;
+}
+
+/*cards usuarios*/
+.card-usuario{
+    background-color:hsl(300, 43%, 22%);
+    color: hsl(300, 24%, 96%); 
+    width: 30%;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.main-card{
+    display: flex;
+    padding: 20px 0 0 20px;
+    align-items: center;
+}
+.img-user{
+    border-radius: 50%;
+}
+
+.titulos-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+.verificacion{
+    color: hsl(333, 80%, 67%);
+}
+
+
+.comentario{
+    width: 90%;
+    margin: auto;
+    padding-top: 15px;
+}
+
+.card4{
+    margin-top: 20px;
+}
+.card5{
+    margin-top: 40px;
+}
+/*fin card usuario*/
+/*fin parte inferior*/
+
+
+/*responsive breackpoint 576px*/
+
+@media screen and (max-width: 576px){
+
+    .contenedor-general{
+        width: 100%;
+    }
+    .parte-superior{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .titulo-principal{
+        width: 80%;
+        font-size: 40px;
+    }
+
+    .subtitulo{
+        color:  hsl(300, 43%, 22%);
+        font-size: 20px;
+        font-weight: 400;
+        padding-top: 20px;
+    }
+    
+    .contenedor-cards{
+        display: flex;
+        flex-direction: column;
+        padding: 30px 0 0 0;
+    }
+    
+    .card-star{
+        font-size: 15px;
+        font-weight: 400;
+        color: hsl(300, 43%, 22%);
+        background-color: hsl(300, 24%, 96%);
+        height: 60px;
+        border-radius: 5px;
+        margin-top: 10px;
+        padding: 22px;
+    }
+    
+    .card2{
+        margin-left: 0px;
+    }
+    
+    .card3{
+        margin-left: 0px;
+    }
+    
+    .parte-inferior{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-top: 50px;
+    }
+    
+    .main-card{
+        display: flex;
+        padding: 20px 0 0 20px;
+        align-items: center;
+    }
+    .img-user{
+        border-radius: 50%;
+    }
+    
+    .titulos-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 20px;
+    }
+    
+    
+    .card-usuario{
+        width: 80vw;
+        background-color:hsl(300, 43%, 22%);
+        color: hsl(300, 24%, 96%); 
+        height: 250px;
+        border-radius: 5px;
+    }
+    
+    .comentario{
+        width: 90%;
+        margin: auto;
+        padding-top: 15px;
+    }
+    
+    .card4{
+        margin-top: 20px;
+    }
+    .card5{
+        margin-top: 40px;
+    }
+    
+}
